@@ -4,9 +4,53 @@
 }
 
 html,
+h2,
 body {
   margin: 0;
   padding: 0;
 }
 
 /* Add styles here! */
+
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-very-dark: hsl(0deg, 0%, 10%);
+  --color-dark: hsl(0deg, 0%, 30%);
+  --color-medium: hsl(0deg, 0%, 40%);
+  --color-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+}
+
+header {
+  margin: 4rem;
+}
+
+strong {
+  color: var(--color-primary);
+}
+
+main {
+  background-color: var(--color-light);
+  padding: 4rem;
+  border-top: 0.25rem solid var(--color-medium);
+}
+
+.card {
+  background-color: var(--color-white);
+  padding: 0.5rem 0px;
+}
+
+.card p {
+  padding: 0 1rem;
+}
+
+.indented-heading {
+  background-color: var(--color-secondary-light);
+  border-bottom: 0.25rem solid var(--color-secondary-dark);
+  padding: 1rem;
+  width: fit-content;
+  color: var(--color-very-dark)
+}
